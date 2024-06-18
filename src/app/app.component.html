@@ -1,13 +1,13 @@
 <div class="container">
   <div class="content">
-    <h2 class="mat-h2">Document Format</h2>
+    <h2 class="mat-h2">Formatar Documento</h2>
     <div class="buttons">
-      <input type="file" id="inputFile" (change)="aoSelecionarArquivo($event)" accept=".xlsx, .xls" style="display: none;">
+      <input type="file" id="inputFile" accept=".xlsx, .xls" (change)="aoSelecionarArquivo($event)" accept=".xlsx, .xls" style="display: none;">
       <button mat-fab extended (click)="selecionarArquivo()">
         <mat-icon>file_upload</mat-icon>
         Selecionar Arquivo
       </button>  
-      <button mat-fab extended (click)="formatarArquivo()">
+      <button mat-fab extended (click)="exportarArquivo()">
         <mat-icon>get_app</mat-icon>
         Baixar Arquivo
       </button>
