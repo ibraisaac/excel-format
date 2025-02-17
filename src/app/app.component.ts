@@ -86,7 +86,7 @@ export class AppComponent {
           nota: '',
         };
 
-        if (modelo.destinatario) {
+        if (modelo.destinatario && !modelo.destinatario.includes("*")) {
           this.dadoFormatado.push(modelo);
           numeroLinha++;
         }
