@@ -78,15 +78,18 @@ export class AppComponent {
       if (rowData.length > 1) { 
         const modelo: ArquivoModelo = {
           numero: numeroLinha,
-          destinatario: rowData[44],
-          produto: rowData[11],
-          variacao: rowData[13],
-          quantidade: parseInt(rowData[16]),
-          preco: rowData[14],
+          destinatario: rowData[45],
+          produto: rowData[12],
+          variacao: rowData[14],
+          quantidade: parseInt(rowData[17]),
+          preco: rowData[15],
           nota: '',
         };
-        this.dadoFormatado.push(modelo);
-        numeroLinha++;
+
+        if (modelo.destinatario) {
+          this.dadoFormatado.push(modelo);
+          numeroLinha++;
+        }
       }
     }
   }
