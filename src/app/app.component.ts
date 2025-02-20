@@ -78,10 +78,10 @@ export class AppComponent {
       if (rowData.length > 1) { 
         const modelo: ArquivoModelo = {
           numero: numeroLinha,
-          destinatario: rowData[45],
-          produto: rowData[12],
-          variacao: rowData[14],
-          quantidade: parseInt(rowData[17]),
+          destinatario: rowData[44],
+          produto: rowData[11],
+          variacao: rowData[13],
+          quantidade: parseInt(rowData[16]),
           preco: rowData[15],
           nota: '',
         };
